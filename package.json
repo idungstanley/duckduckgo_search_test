@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/idungstanley/grow_tools_test#readme",
   "dependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^10.6.0",
+    "mocha": "^10.0.0"
   }
 }
