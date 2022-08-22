@@ -10,7 +10,7 @@ describe("Sign up", ()=>{
         cy.get('.styles__user-actions__btn-create-account__1204g').click()
         cy.url().should("eq", "https://growthtools.com/register")
     })
-    it("Fill First sign Up step", ()=>{
+    it("Page 1 sign Up step", ()=>{
         cy.get('.styles__user-actions__btn-create-account__1204g').click()
         cy.get('body').contains("Next").should("have.class","btn")
         cy.get(':nth-child(1) > .form-group > #search')
@@ -23,5 +23,9 @@ describe("Sign up", ()=>{
         cy.get(':nth-child(5) > #search').type("stanley1dung@gmail.com")
         cy.get(':nth-child(6) > .form-control').type("45826966Bf")
         cy.get('form > .btn').click()
+    })
+
+    it("Page 2 signup page", ()=>{
+        
     })
 })
